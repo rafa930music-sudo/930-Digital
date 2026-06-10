@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rafa930music-sudo.github.io/930-Digital/sitemap.xml
