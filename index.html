@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>930 Digital | Desarrollo Web Profesional con IA</title>
+    <meta name="description" content="930 Digital - Desarrollo web profesional con inteligencia artificial. Presskits, páginas web y tiendas online.">
+    <meta name="theme-color" content="#06060e">
+    <meta property="og:title" content="930 Digital | Desarrollo Web Profesional">
+    <meta property="og:description" content="Desarrollo web con IA. Proyectos reales, resultados reales.">
+   <link rel="canonical" href="https://rafa930music-sudo.github.io/930-Digital/">
+    <link rel="icon" type="image/png" href="images/Logo-de-930-Digital.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<canvas id="networkCanvas"></canvas>
+<div class="custom-cursor" id="customCursor"></div>
+
+<div id="splash">
+    <div class="splash-logo">930<span>Digital</span></div>
+    <p class="splash-tagline">Desarrollo web con inteligencia artificial</p>
+    <div class="splash-loader"><div class="splash-loader-bar"></div></div>
+</div>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-inner container">
+        <a href="#home" class="nav-logo">930<span>Digital</span></a>
+        <ul class="nav-links">
+            <li><a href="#home">Inicio</a></li><li><a href="#services">Servicios</a></li><li><a href="#process">Proceso</a></li>
+            <li><a href="#ia">Tecnología</a></li><li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact" class="nav-cta">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                <span class="ball"></span>
+                <i class="fas fa-sun icon-sun"></i>
+                <i class="fas fa-moon icon-moon"></i>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="mobileClose">&times;</button>
+    <a href="#home">Inicio</a><a href="#services">Servicios</a><a href="#process">Proceso</a>
+    <a href="#ia">Tecnología</a><a href="#portfolio">Portfolio</a><a href="#contact">Contacto</a>
+</div>
+
+<section class="hero" id="home">
+    <div class="container"><div class="hero-content">
+        <h1>Convertimos ideas en <span class="gradient-neon">experiencias digitales</span></h1>
+        <p class="hero-subtitle">Desarrollo web profesional con inteligencia artificial. Diseño único, entrega rápida y precio justo.</p>
+        <div class="hero-actions"><a href="#contact" class="btn btn-primary btn-lg">Solicitar presupuesto</a><a href="#portfolio" class="btn btn-outline btn-lg">Ver proyectos</a></div>
+    </div></div>
+</section>
+
+<section id="services" class="bg-alt"><div class="container">
+    <div class="section-header"><p class="section-label">Servicios</p><h2>Lo que puedo hacer por usted</h2></div>
+    <div class="services-grid">
+        <div class="service-card"><h3>Páginas Web</h3><p>Landing pages, portfolios y webs corporativas con diseño responsive y SEO optimizado.</p><div class="service-card__price">150€</div><ul class="service-card__features"><li><i class="fas fa-check"></i> Diseño personalizado</li><li><i class="fas fa-check"></i> Adaptable a todos los dispositivos</li><li><i class="fas fa-check"></i> Formulario de contacto</li><li><i class="fas fa-check"></i> Entrega en 3-5 días</li></ul><a href="#contact" class="btn btn-outline btn-block">Solicitar información</a></div>
+        <div class="service-card service-card--featured"><h3>Presskits Artísticos</h3><p>Dossier digital profesional con reproductor de música, rider técnico y formulario de contratación.</p><div class="service-card__price">250€</div><ul class="service-card__features"><li><i class="fas fa-check"></i> Animación de entrada premium</li><li><i class="fas fa-check"></i> Reproductor de audio integrado</li><li><i class="fas fa-check"></i> Sección de videoclips</li><li><i class="fas fa-check"></i> Rider técnico detallado</li></ul><a href="#contact" class="btn btn-primary btn-block">Solicitar información</a></div>
+        <div class="service-card"><h3>Tiendas Online</h3><p>Ecommerce completo con catálogo, carrito, pasarela de pago y panel de administración.</p><div class="service-card__price">500€</div><ul class="service-card__features"><li><i class="fas fa-check"></i> Catálogo de productos ilimitado</li><li><i class="fas fa-check"></i> Carrito y pasarela de pago</li><li><i class="fas fa-check"></i> Panel de gestión intuitivo</li><li><i class="fas fa-check"></i> SEO para ecommerce</li></ul><a href="#contact" class="btn btn-outline btn-block">Solicitar información</a></div>
+    </div>
+</div></section>
+
+<section id="process"><div class="container">
+    <div class="section-header"><p class="section-label">Proceso de trabajo</p><h2>Cómo convertimos su idea en realidad</h2></div>
+    <div class="process-grid">
+        <div class="process-card"><div class="process-number">1</div><h3>Consultoría inicial</h3><p>Analizamos su proyecto y proponemos la mejor solución.</p></div>
+        <div class="process-card"><div class="process-number">2</div><h3>Desarrollo con IA</h3><p>Creamos su web con inteligencia artificial y diseño único.</p></div>
+        <div class="process-card"><div class="process-number">3</div><h3>Entrega y soporte</h3><p>Recibe su web lista. Incluye soporte post-entrega.</p></div>
+    </div>
+</div></section>
+
+<section id="ia" class="bg-alt"><div class="container">
+    <div class="section-header"><p class="section-label">Tecnología</p><h2>Inteligencia artificial aplicada al desarrollo web</h2></div>
+    <div class="ia-grid">
+        <div class="ia-card"><i class="fas fa-bolt"></i><h3>Resultados en tiempo récord</h3><p>La IA genera y valida código de calidad en una fracción del tiempo tradicional.</p></div>
+        <div class="ia-card"><i class="fas fa-pen-ruler"></i><h3>Diseño personalizado</h3><p>Cada proyecto es único. Sin plantillas genéricas.</p></div>
+        <div class="ia-card"><i class="fas fa-euro-sign"></i><h3>Hasta un 60% más económico</h3><p>Precios competitivos sin sacrificar la calidad final.</p></div>
+    </div>
+</div></section>
+
+<section id="portfolio"><div class="container">
+    <div class="section-header"><p class="section-label">Portfolio</p><h2>Proyectos realizados</h2></div>
+    <div class="portfolio-grid">
+        <div class="portfolio-card">
+            <div class="portfolio-card__image">
+                <img src="https://raw.githubusercontent.com/incrife/incrife/main/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(57).png" alt="Incrife" loading="lazy">
+                <div class="portfolio-card__overlay"><a href="https://incrife.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Visitar sitio</a></div>
+            </div>
+            <div class="portfolio-card__body"><h3>Incrife — Web Profesional</h3><p>Sitio web corporativo con diseño moderno y formulario de contacto.</p><a href="https://incrife.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm portfolio-btn-side">Visitar</a></div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-card__image">
+                <img src="https://rafa930music-sudo.github.io/El-Nobir-Pagina-Web/images/elnobir-perfil.jpg" alt="ELNOBIR" loading="lazy">
+                <div class="portfolio-card__overlay"><a href="https://rafa930music-sudo.github.io/El-Nobir-Pagina-Web/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Visitar sitio</a></div>
+            </div>
+            <div class="portfolio-card__body"><h3>ELNOBIR — Presskit Artístico</h3><p>Dossier digital con partículas, glitch, cursor neón y formulario de booking.</p><a href="https://rafa930music-sudo.github.io/El-Nobir-Pagina-Web/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm portfolio-btn-side">Visitar</a></div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-card__image">
+                <img src="https://rafa930music-sudo.github.io/Rafa-930-PAGINA-WEB/images/Foto%20perfil.webp" alt="Rafa 930" loading="lazy">
+                <div class="portfolio-card__overlay"><a href="https://rafa930music-sudo.github.io/Rafa-930-PAGINA-WEB/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Visitar sitio</a></div>
+            </div>
+            <div class="portfolio-card__body"><h3>Rafa 930 — Web de Artista</h3><p>Sitio personal con splash screen, partículas, tema oscuro/claro y booking.</p><a href="https://rafa930music-sudo.github.io/Rafa-930-PAGINA-WEB/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm portfolio-btn-side">Visitar</a></div>
+        </div>
+    </div>
+</div></section>
+
+<section id="contact" class="bg-alt">
+    <div class="container">
+        <div class="section-header"><p class="section-label">Contacto</p><h2>Hablemos de su proyecto</h2><p class="section-subtitle">Cuéntenos qué necesita y recibirá un presupuesto en menos de 24 horas.</p></div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-info-item"><div class="contact-info-icon"><i class="fas fa-envelope"></i></div><div class="contact-info-text"><strong>Correo electrónico</strong><p>rafa930.music@gmail.com</p></div></div>
+                <div class="contact-info-item"><div class="contact-info-icon"><i class="fab fa-whatsapp"></i></div><div class="contact-info-text"><strong>WhatsApp</strong><p>+34 671 59 18 14</p></div></div>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/mrevlykr" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre completo" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <select name="servicio"><option value="">Servicio que le interesa</option><option value="web">Página Web</option><option value="presskit">Presskit Artístico</option><option value="tienda">Tienda Online</option><option value="otro">Otro</option></select>
+                <textarea name="mensaje" rows="4" placeholder="Describa su proyecto..." required></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer"><div class="container"><p>&copy; 2025 930 Digital. Desarrollo web profesional con inteligencia artificial.</p></div></footer>
+
+<div class="floating-buttons" aria-label="Botones de contacto rápido">
+    <a href="https://wa.me/34671591814?text=Hola%20Rafa,%20me%20interesa%20trabajar%20contigo" target="_blank" rel="noopener noreferrer" class="floating-btn" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafa930.music@gmail.com&su=Consulta%20Profesional%20-%20930%20Digital" target="_blank" rel="noopener noreferrer" class="floating-btn" aria-label="Enviar email por Gmail">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+    </a>
+</div>
+
+<button id="backToTop" class="back-to-top" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
