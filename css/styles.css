@@ -1,6 +1,6 @@
 /* ============================================
    930 DIGITAL - ESTILOS PRINCIPALES
-   Versión ordenada y optimizada
+   Versión optimizada y mejorada
    ============================================ */
 
 /* ---------- VARIABLES Y TEMAS ---------- */
@@ -55,7 +55,20 @@ body.light {
 
 /* ---------- RESET Y BASE ---------- */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-body, a, button, .btn, input, select, textarea { cursor: none; }
+
+/* El cursor personalizado solo se muestra en escritorio */
+.custom-cursor ~ body,
+.custom-cursor ~ a,
+.custom-cursor ~ button,
+.custom-cursor ~ .btn,
+.custom-cursor ~ input,
+.custom-cursor ~ select,
+.custom-cursor ~ textarea { cursor: none; }
+
+@media (pointer: coarse) {
+    body, a, button, .btn, input, select, textarea { cursor: auto !important; }
+}
+
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 body {
     font-family: var(--font-body);
@@ -213,6 +226,7 @@ h3 { font-size: 1.1rem; }
     z-index: 1000;
     background: rgba(6,6,14,0.92);
     backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     border-bottom: 1px solid var(--border);
     transition: var(--transition);
 }
@@ -277,6 +291,7 @@ body.light .navbar { background: rgba(248,249,250,0.92); }
     align-items: center;
     gap: 1rem;
 }
+
 /* Toggle de tema */
 .theme-toggle {
     background: var(--bg-card);
@@ -337,6 +352,7 @@ body.light .theme-toggle .icon-moon { opacity: 0; }
     background: var(--text);
     display: block;
     border-radius: 2px;
+    transition: 0.3s;
 }
 .mobile-menu {
     display: none;
@@ -828,6 +844,7 @@ body.light .theme-toggle .icon-moon { opacity: 0; }
     border-radius: 50%;
     background: rgba(0, 229, 255, 0.25);
     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     border: 1.5px solid var(--neon-cyan);
     box-shadow: 0 0 15px var(--neon-cyan);
     pointer-events: none;
@@ -854,6 +871,7 @@ body.light .theme-toggle .icon-moon { opacity: 0; }
     height: 100%;
     background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -892,7 +910,6 @@ body.light .theme-toggle .icon-moon { opacity: 0; }
         max-width: 380px;
         margin: 0 auto;
     }
-    /* Ajustes de tipografía móvil */
     body {
         font-size: 15px;
         line-height: 1.6;

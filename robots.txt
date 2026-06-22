@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
 
+# Evitar indexar archivos internos
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+
+# Evitar contenido duplicado
+Disallow: /#*
+
 Sitemap: https://rafa930music-sudo.github.io/930-Digital/sitemap.xml

@@ -1,5 +1,5 @@
 // ============================================
-// 930 DIGITAL - SCRIPT PRINCIPAL (VERSIÓN FINAL)
+// 930 DIGITAL - SCRIPT PRINCIPAL (VERSIÓN FINAL OPTIMIZADA)
 // ============================================
 
 // 1. SPLASH SCREEN
